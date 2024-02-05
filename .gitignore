@@ -39,3 +39,8 @@ testem.log
 Thumbs.db
 
 .nx/cache
+
+# Env Files
+.env.*
+*.env
+!example.env
