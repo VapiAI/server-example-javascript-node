@@ -1,0 +1,19 @@
+services:
+  - type: web
+    name: vapiai
+    env: node
+    buildCommand: npm install && npm run build
+    startCommand: node dist/vapiai/main.js
+    envVars:
+      - key: HOST
+        value: "0.0.0.0"
+      - key: PORT
+        value: "3000"
+      - key: WEATHER_API_KEY
+        sync: false
+      - key: OPENAI_API_KEY
+        sync: false
+      - key: VAPI_BASE_URL
+        value: "https://api.vapi.ai"
+      - key: VAPI_API_KEY
+        sync: false
