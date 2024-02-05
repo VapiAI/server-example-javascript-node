@@ -1,6 +1,6 @@
 services:
   - type: web
-    name: vapiai
+    name: vapi-express-character-design
     env: node
     buildCommand: pnpm install && pnpm run build
     startCommand: node dist/vapiai/main.js

@@ -23,7 +23,7 @@
   "addons": [],
   "scripts": {
     "dynos": {
-      "web": "nx serve vapiai --prod"
+      "web": "node dist/vapiai/main.js"
     }
   }
 }
