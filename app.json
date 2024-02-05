@@ -7,6 +7,22 @@
     "NODE_ENV": {
       "description": "Node environment",
       "value": "production"
+    },
+    "HOST": {
+      "description": "HOST",
+      "value": "0.0.0.0"
+    },
+    "WEATHER_API_KEY": {
+      "description": "Weather API key from openweathermap",
+      "value": ""
+    },
+    "OPENAI_API_KEY": {
+      "description": "OpenAI API key",
+      "value": ""
+    },
+    "VAPI_API_KEY": {
+      "description": "Vapi Private API key",
+      "value": ""
     }
   },
   "buildpacks": [
