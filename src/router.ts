@@ -3,6 +3,7 @@ import { inboundHandler } from './handlers/inbound';
 import { outboundHandler } from './handlers/outbound';
 import { webhookHandler } from './handlers/webhook';
 import { customLLMHandler } from './handlers/custom-llm';
+import { functionsCallHandler } from './handlers/functions';
 
 const router = Router();
 
@@ -19,4 +20,8 @@ router.post(
   '/custom-llm/openai-advanced/chat/completions',
   customLLMHandler.openaiAdvanced
 );
+
+router.post('/functions/basic', functionsCallHandler.basic);
+router.post('/functions/rag', functionsCallHandler.rag);
+
 export { router };
