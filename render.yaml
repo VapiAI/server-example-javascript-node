@@ -2,13 +2,11 @@ services:
   - type: web
     name: vapiai
     env: node
-    buildCommand: npm install && npm run build
+    buildCommand: pnpm install && pnpm run build
     startCommand: node dist/vapiai/main.js
     envVars:
       - key: HOST
         value: "0.0.0.0"
-      - key: PORT
-        value: "3000"
       - key: WEATHER_API_KEY
         sync: false
       - key: OPENAI_API_KEY
