@@ -1,0 +1,1 @@
+web: node dist/vapiai/main.js
