@@ -3,7 +3,7 @@ import cors from 'cors';
 import { router } from './router';
 
 const host = process.env.HOST ?? 'localhost';
-const port = process.env.PORT ? Number(process.env.PORT) : 3000;
+const port = process.env.PORT ? parseInt(process.env.PORT) : 3000;
 
 const app = express();
 

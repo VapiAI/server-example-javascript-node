@@ -1,0 +1,30 @@
+{
+  "name": "Character Design Assistant",
+  "description": "A voice assistant that can help author to design character for their story.",
+  "repository": "https://github.com/VapiAI/server-side-example-node-express",
+  "logo": "URL to your app logo",
+  "keywords": ["node", "express", "nx"],
+  "env": {
+    "NODE_ENV": {
+      "description": "Node environment",
+      "value": "production"
+    }
+  },
+  "buildpacks": [
+    {
+      "url": "heroku/nodejs"
+    }
+  ],
+  "formation": {
+    "web": {
+      "quantity": 1,
+      "size": "free"
+    }
+  },
+  "addons": [],
+  "scripts": {
+    "dynos": {
+      "web": "nx serve vapiai --prod"
+    }
+  }
+}
